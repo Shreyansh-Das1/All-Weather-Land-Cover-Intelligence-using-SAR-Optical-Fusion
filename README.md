@@ -6,8 +6,10 @@ Traditional optical sensors fail under cloud cover, haze, and smoke.
 By fusing Sentinel-1 SAR with Sentinel-2 optical data, this project enables all-weather, day-night land cover classification.
 
 ## Area of Interest
-AOI- Dhanbad-Asansol-Maithon Region
+AOI- Dhanbad-Asansol-Maithon-Panchet Region
+
 Date of Acquisition: 10/02/2026
+
 Source: Sentinel-1 and Sentinel-2
 
 ## Data Pipeline
