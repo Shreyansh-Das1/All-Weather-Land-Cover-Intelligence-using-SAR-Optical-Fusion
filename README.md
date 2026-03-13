@@ -42,13 +42,14 @@ Bottleneck: 128 channels
 Decoder  : 64→32→16 channels
 Skip connections at each level
 Output   : 5 class segmentation map
-Loss     : Weighted CrossEntropyLoss to handle class imbalance
-          (handles 87% vegetation dominance)
-          |Class 		| Distribution | Weight |
-          | Vegetation | 87.4%  | 0.23|
-           | Urban      | 5.2%   | 3.81|
-            | Barren     | 1.3%   |15.00|
-            | Water      | 4.9%   |4.09|
+Loss: Weighted CrossEntropyLoss to handle class imbalance
+
+| Class      | Distribution | Weight |
+|------------|-------------|--------|
+| Vegetation | 87.4%       | 0.23   |
+| Urban      | 5.2%        | 3.81   |
+| Barren     | 1.3%        | 15.00  |
+| Water      | 4.9%        | 4.09   |
 
 ## Results
 | Class      | IoU   |
