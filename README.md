@@ -41,7 +41,9 @@ Encoder  : 6→16→32→64 channels
 Bottleneck: 128 channels
 Decoder  : 64→32→16 channels
 Skip connections at each level
+
 Output   : 5 class segmentation map
+
 Loss: Weighted CrossEntropyLoss to handle class imbalance
 
 | Class      | Distribution | Weight |
