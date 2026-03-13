@@ -62,6 +62,7 @@ Loss     : Weighted CrossEntropyLoss to handle class imbalance
 Pixel Accuracy: 86.57%
 
 ## Visualization
+Re-Stitched Optical image vs Ground Truth Label vs Predicted Label
 ![Re-Stitched Optical image vs Ground Truth Label vs Predicted Label](output.png)
 
 ## Known Limitations
