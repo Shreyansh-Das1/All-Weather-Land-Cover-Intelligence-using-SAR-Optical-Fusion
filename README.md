@@ -30,8 +30,11 @@ For MSI, the bands were stacked and clipped to the AOI.
 
 ### Tiling
 1595 tiles of 128×128 pixels for each of MSI,SAR, and Labels 
+
 Train/Val/Test split: 70% / 15% / 15%
+
 Input shape after fusion per tile: (6, 128, 128)
+
 Label shape per tile: (128, 128)
 
 ## Model Architecture
@@ -40,8 +43,11 @@ Model: Lightweight U-Net for Pixel-level Segmentation
 U-Net performs pixel-level segmentation unlike standard CNNs which classify entire images. Skip connections preserve spatial detail lost during downsampling.
 
 Encoder  : 6→16→32→64 channels
+
 Bottleneck: 128 channels
+
 Decoder  : 64→32→16 channels
+
 Skip connections at each level
 
 Output   : 5 class segmentation map
@@ -68,6 +74,7 @@ Pixel Accuracy: 86.57%
 
 ## Visualization
 Re-Stitched Optical image vs Ground Truth Label vs Predicted Label
+
 ![Re-Stitched Optical image vs Ground Truth Label vs Predicted Label](output.png)
 
 ## Known Limitations
